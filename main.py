@@ -17,7 +17,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-model = joblib.load("src\model_ml_10k-.pkl")
+model = joblib.load("src/model_ml_10k-.pkl")
 model_10k_plus = joblib.load("src/model_ml_10k+.pkl")
 
 class InputData(BaseModel):
